@@ -1,12 +1,10 @@
 package event.notifier;
 
-import java.util.Scanner;
-
+import event.notifier.view.Cli;
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNext()) {
-            System.out.println(sc.nextLine());
-        }
+        Cli cli = new Cli();
+        System.out.print("1.login /n 2.cadastro");
+        cli.requestInput();
     }
 }
