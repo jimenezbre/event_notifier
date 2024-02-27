@@ -5,16 +5,17 @@
 package eventnotifier.view;
 
 import java.util.Scanner;
+import static java.lang.System.out;
 
 /**
  *
  * @author Victor J.B
  */
-public class Cli{
-    Scanner sc = new Scanner(System.in);
-    
-    public String requestInput()
-    {
-      return sc.nextLine();
-    }
+public class Cli {
+  Scanner sc = new Scanner(System.in);
+
+  public String requestInput(String msg) {
+    out.println(msg);
+    return sc.nextLine();
+  }
 }

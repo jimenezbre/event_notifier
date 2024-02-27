@@ -9,6 +9,6 @@ package eventnotifier.Enums;
  * @author Victor J.B
  */
 public class Enums {
-   public enum EventType{Festa,Esportivo,Show,Casamento,Feira,Exposição, Encontro} 
+   public enum EventType{Festa,Esportivo,Show,Casamento,Feira,Exposição, Encontro, Lançamento} 
     
 }

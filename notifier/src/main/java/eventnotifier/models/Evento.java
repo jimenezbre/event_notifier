@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package eventnotifier.models;
+
 import eventnotifier.Enums.Enums.EventType;
 import java.time.LocalDateTime;
-import java.lang.*;
 
 /**
  *
@@ -17,28 +17,25 @@ public class Evento {
     private EventType categoria;
     private LocalDateTime data;
     private String descrição;
-    
-    public Evento (String name, String endereco, LocalDateTime date,EventType type,String descrição)
-    {
+
+    public Evento(String name, String endereco, LocalDateTime date, EventType type, String descrição) {
         this.name = name;
         this.endereco = endereco;
         this.data = date;
-        this.categoria =  type;
+        this.categoria = type;
         this.descrição = descrição;
     };
-    
-   public void exibirEvento()
-   {
-    print(this.name);
-    print(this.categoria.name());
-    print(this.data.toString());
-    print(this.endereco);
-    print(this.descrição);
-    
-   }
-    
-   void print(String text)
-   {
-       System.out.print(text);
-   }
+
+    public void exibirEvento() {
+        print(this.name);
+        print(this.categoria.name());
+        print(this.data.toString());
+        print(this.endereco);
+        print(this.descrição);
+
+    }
+
+    void print(String text) {
+        System.out.print(text);
+    }
 }
